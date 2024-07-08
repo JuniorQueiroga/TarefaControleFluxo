@@ -8,11 +8,22 @@ public class ExemploPPT2 {
         int nota2 = 6;
         int nota3 = 7;
         int nota4 = 9;
-        String aluno1 = "Robson";
-        String aluno2 = "Maynara";
-        String aluno3 = "Maria";
-        String aluno4 = "Junior";
 
+        int totalNota = nota1 + nota2 + nota3 + nota4;
+
+        float media = totalNota / 4f;
+
+        if (media >= 0 && media <5) {
+            System.out.println("A média das notas é: " + media + ", você está reprovado.");
+        } else if (media >= 5 && media < 7) {
+            System.out.println("A média das notas é: " + media + ", você está de recuperação.");
+        } else  {
+            System.out.println("A média das notas é: " + media + ", você está aprovado.");
+        }
+    }
+}
+
+    /*
         if (nota1 >= 0 && nota1 <5) {
             System.out.println(aluno1 + ", você está reprovado.");
         } else if (nota1 >= 5 && nota1 < 7) {
@@ -45,4 +56,6 @@ public class ExemploPPT2 {
             System.out.println(aluno4 + ", você está aprovado.");
         }
     }
-}
+
+     */
+
